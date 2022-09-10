@@ -47,7 +47,7 @@ function scrollVisible(){
     let scroll = $(this).scrollTop() 
     let scrollAtFirst = 900,
     scrollAtSecond=1900,
-        scrollAtThird=2900;
+        scrollAtThird=2800;
 
     let scrollRotateFirst = (scroll-scrollAtFirst)
     ,scrollRotateSecond = (scroll-scrollAtSecond)

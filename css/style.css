@@ -493,4 +493,16 @@ header {
   }
 }
 
+::-webkit-scrollbar {
+  background-color: rgb(148, 187, 171);
+  width: 13px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d8d2d2;
+  border-bottom-left-radius: 19px;
+  border-bottom-right-radius: 1rem;
+  border: 1px solid rgb(143, 133, 133);
+}
+
 /*# sourceMappingURL=style.css.map */
