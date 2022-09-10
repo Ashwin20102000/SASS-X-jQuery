@@ -37,7 +37,7 @@ const loadOtherProjects = () => {
   const otherProjects = [
     {
       title:'AlgoX',
-      description:'Algorithm Vishuvalizer',
+      description:'Algorithm Visualizer',
       img:'../assests/AlgoX.png'
     }
   ];
