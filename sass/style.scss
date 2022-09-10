@@ -97,6 +97,7 @@ background-color: black;
     background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHGZIFMGGI-ue_Rf60ZLDB2XdS601aUEKp-w&usqp=CAU');
     background-repeat: no-repeat;
     margin: 2rem;
+    height: 13rem;
     font-size: 6px;
   }
 }
@@ -112,4 +113,17 @@ background-color: black;
   flex-direction: column;
   justify-content: start;
   align-items: center;
+  overflow: hidden;
 }
+.links {
+  @include config.flexAlignJust();
+  margin-top: .7rem;
+  a{
+    margin-left: 5px;
+    color: config.$darkBlueColor;
+  }
+  @media (max-width:'678px') {
+    font-size: x-small;
+  }
+}
+
