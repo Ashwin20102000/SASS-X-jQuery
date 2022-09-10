@@ -23,23 +23,48 @@ function scaleWhenHover(selectors){
 
 }
 
+const scrollAnimate = (scrollRotate,id) => {
+ if(scrollRotate<1000){
+
+   $(`.slideBox-${id}`).css('position','absolute')
+     .animate({
+       deg:scrollRotate
+     },
+     {
+       duration: 0,
+       step: function() {
+         $(this).css({ transform: 'rotate(' + scrollRotate + 'deg)',left:`${scrollRotate}px` });
+       }
+     })
+ }
+}
+
+
 function scrollVisible(){
   $('#scroll').addClass('occupier');
   $('.projects').hide()
   $(document).scroll(function(){
     let scroll = $(this).scrollTop() 
-    let scrollAtFirst = 900;
-    let scrollRotate = (scroll-scrollAtFirst);
+    let scrollAtFirst = 900,
+    scrollAtSecond=1900,
+        scrollAtThird=2900;
+
+    let scrollRotateFirst = (scroll-scrollAtFirst)
+    ,scrollRotateSecond = (scroll-scrollAtSecond)
+    ,scrollRotateThird = (scroll-scrollAtThird);
+    
     if(scroll>500){
       $('#scroll').removeClass('occupier');
       $('.projects').fadeOut(2000)
     }
-     if(scroll>900){
-
-      $('.slideBox-1').text(scrollRotate).animate({
-        // WebkitTransform: 'rotate(' + scrollRotate + 'deg)',
-        '-moz-transform': 'rotate(' + scrollRotate + 'deg)'
-      },1000);
+     if(scroll<1300){
+     scrollAnimate(scrollRotateFirst,1)
+    }
+     if(scroll>1900){
+     scrollAnimate(scrollRotateSecond,2)
+    }
+     if(scroll>2500){
+     scrollAnimate(scrollRotateThird,3)
     }
   })
 }
@@ -107,7 +132,6 @@ $(document).ready(function () {
   // $( ".fadeText" ).toggle( "bounce", { times: 2 }, "slow" );
   (function loop() {
     $('.fadeText').delay(900).fadeToggle("slow",loop).toggle( "bounce", { times: 3 }, "slow" );;
-    $('.bb-2').delay(4000).fadeToggle("slow",loop).toggle( "bounce", { times: 2 }, "slow" );
 
   }())
 
