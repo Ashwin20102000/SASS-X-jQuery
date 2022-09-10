@@ -1,0 +1,58 @@
+$primary_color:#f2f2f2;
+$secondary_color:#003B46;
+$darkBlueColor: #388997;
+// $fontfamily1: 'Paytone One', sans-serif;
+$font-family: 'Poppins', sans-serif;
+
+@mixin scrollBar {
+
+}
+
+
+@mixin flexAlignJust {
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+@mixin transformTransition ($scale:1) {
+  transition: 1s;
+  transform: scale($scale);
+}
+
+$spaceUnits:(1,2,3,4,5,6,7);
+
+@each $space in $spaceUnits {
+  .m-#{$space}{
+    margin: #{$space}rem;
+  }
+  .mx-#{$space}{
+    margin: 0rem #{$space}rem;
+  }
+  .my-#{$space}{
+    margin: #{$space}rem 0rem;
+  }
+  .p-#{$space}{
+    padding: #{$space}em;
+  }
+  .px-#{$space}{
+    padding: 0em #{$space}em;
+  }
+  .py-#{$space}{
+    padding: #{$space}em 0em;
+  }
+
+  .b-#{$space}{
+    border: #{$space}px;
+  }
+  .bx-#{$space}{
+    border: 0px #{$space}px;
+  }
+  .by-#{$space}{
+    border: #{$space}px 0px;
+  }
+  .bb-#{$space}{
+    border-bottom: #{$space}px solid gray;
+  }
+
+}
