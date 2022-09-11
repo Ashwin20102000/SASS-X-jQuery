@@ -5,6 +5,7 @@
   box-sizing: border-box;
   font-family: config.$font-family;
   letter-spacing: 0.627px;
+  @include config.scrollBar()
 }
 
 header {
@@ -73,7 +74,7 @@ header {
 
 .addTransformTransition {
   @include config.transformTransition(1.1);
-background-color: black;
+  background-color: black;
 }
 
 .removeTransformTransition {
@@ -114,6 +115,7 @@ background-color: black;
   justify-content: start;
   align-items: center;
   overflow: hidden;
+  text-align: center
 }
 .links {
   @include config.flexAlignJust();
@@ -126,14 +128,44 @@ background-color: black;
     font-size: x-small;
   }
 }
-::-webkit-scrollbar {
-  background-color: rgb(148, 187, 171);
-  width: 13px;
-}
-::-webkit-scrollbar-thumb {
-  background-color: #d8d2d2;
-  border-bottom-left-radius: 19px;
-  border-bottom-right-radius: 1rem;
-  border: 1px solid rgb(143, 133, 133);
+
+
+#pura {
+   overflow: hidden;
+   @media screen and (max-width:'678px') {
+    display: none;
+   } 
 }
 
+footer {
+  @include config.flexAlignJust();
+  width: auto;
+  height: auto;
+  justify-content: space-evenly;
+  background: config.$secondary_color;
+  h4,h1{
+    color: config.$primary_color !important;
+  }
+  @media (max-width:'678px') {
+    flex-direction: column;
+  }
+  .hanles > a{
+    padding-top: 1.5rem;
+    padding-left: .5em;
+    padding-right: .5em;
+    border-radius: 50%;
+    background: #dad1d1;
+    &:hover {
+      @include config.transformTransition('1.1') ;
+      background-color: transparent;
+      border: 2px solid config.$darkBlueColor;
+    }
+  }
+}
+.icon{
+  width: 2rem;
+  &:hover{
+    cursor: pointer;
+  }
+  
+}
