@@ -115,7 +115,7 @@ header {
   justify-content: start;
   align-items: center;
   overflow: hidden;
-  text-align: center
+  padding: 1em
 }
 .links {
   @include config.flexAlignJust();

@@ -42,8 +42,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("../assests/PostApp.png");
-  background-repeat: no-repeat;
+  background: url("../assests/blade.png") no-repeat;
   width: 8rem;
   height: 8rem;
   border-radius: 50%;
@@ -102,8 +101,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("../assests/PostApp.png");
-  background-repeat: no-repeat;
+  background: url("../assests/blade.png") no-repeat;
   width: 8rem;
   height: 8rem;
   border-radius: 50%;
@@ -162,8 +160,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("../assests/PostApp.png");
-  background-repeat: no-repeat;
+  background: url("../assests/blade.png") no-repeat;
   width: 8rem;
   height: 8rem;
   border-radius: 50%;
@@ -222,8 +219,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("../assests/PostApp.png");
-  background-repeat: no-repeat;
+  background: url("../assests/blade.png") no-repeat;
   width: 8rem;
   height: 8rem;
   border-radius: 50%;
@@ -282,8 +278,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("../assests/PostApp.png");
-  background-repeat: no-repeat;
+  background: url("../assests/blade.png") no-repeat;
   width: 8rem;
   height: 8rem;
   border-radius: 50%;
@@ -342,8 +337,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("../assests/PostApp.png");
-  background-repeat: no-repeat;
+  background: url("../assests/blade.png") no-repeat;
   width: 8rem;
   height: 8rem;
   border-radius: 50%;
@@ -402,8 +396,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("../assests/PostApp.png");
-  background-repeat: no-repeat;
+  background: url("../assests/blade.png") no-repeat;
   width: 8rem;
   height: 8rem;
   border-radius: 50%;
@@ -555,7 +548,7 @@ header {
   justify-content: start;
   align-items: center;
   overflow: hidden;
-  text-align: center;
+  padding: 1em;
 }
 
 .links {

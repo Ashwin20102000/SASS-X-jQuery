@@ -66,8 +66,7 @@ $spaceUnits:(1,2,3,4,5,6,7);
   }
   .slideBox-#{$space} {
     @include flexAlignJust();
-    background: url('../assests/PostApp.png');
-    background-repeat: no-repeat;
+    background: url('../assests/blade.png') no-repeat;
     width: 8rem;
     height: 8rem;
     border-radius: 50%;
