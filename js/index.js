@@ -51,7 +51,9 @@ function scrollVisible(){
     ,scrollRotateSecond = (scroll-scrollAtSecond)
     ,scrollRotateThird = (scroll-scrollAtThird)
     ,scrollRotateFour = (scroll-scrollAtFour)
-    if(scroll>300){
+    if(scroll>300 
+      && scroll < 650
+      ){
      scrollAnimate(scrollPigeonRotate%700,'#pura','relative')
     }
     if(scroll>500){
