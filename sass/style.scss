@@ -58,7 +58,6 @@ header {
     margin: 0;
     flex-direction: column;
     overflow: hidden;
-    padding: auto;
   } 
 }
 
@@ -69,6 +68,11 @@ header {
   box-shadow: 2px 2px 5px;
   @media (max-width:'678px') {
     flex-direction: column;
+    padding: .5rem;
+    .occupier{
+      display: none
+    }
+
   } 
 }
 
@@ -82,7 +86,6 @@ header {
 }
 .project {
   display: flex;
-  // flex-direction: column;
   align-items: center;
   justify-content: center;
   transition: 1s;
@@ -100,6 +103,9 @@ header {
     margin: 2rem;
     height: 13rem;
     font-size: 6px;
+    h1{
+
+    }
   }
 }
 
