@@ -10,10 +10,12 @@ $font-family: 'Poppins', sans-serif;
   width: 15px;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #d8d2d2;
+  background-color: #fcdd7f;
   border-bottom-left-radius: 7rem;
   border-bottom-right-radius: 7rem;
   border: 1px solid rgb(143, 133, 133);
+  // border: 1px solid #AF9B60;
+
 }
 
 }
@@ -67,14 +69,14 @@ $spaceUnits:(1,2,3,4,5,6,7);
   .slideBox-#{$space} {
     @include flexAlignJust();
     background: url('../assests/blade.png') no-repeat !important;
+    z-index: -2;
     width: 8rem;
     height: 8rem;
     border-radius: 50%;
     color:$secondary_color;
     font-weight: 800;
-    // overflow-x: hidden;
     @media screen and (max-width:'678px') {
-      // display: none;
+      display: none;
     }
     background: #f1f1ff;
 

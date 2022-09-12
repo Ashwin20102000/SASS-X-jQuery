@@ -117,8 +117,10 @@ const loadOtherProjects = () => {
   ];
   $.each(otherProjects,function(idx,project){
     $('#otherProjects').append(
+      
       `
-      <div class="slideBox-${idx+1}">${idx+1}</div>
+      <div class="slideBox-${idx+1}">
+      </div>
       <div class="otherProjects my-2">
         <h1>${project.title}</h1>
         <span class="my-1 p-1">${project.description}</span>

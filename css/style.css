@@ -43,6 +43,7 @@
   justify-content: center;
   align-items: center;
   background: url("../assests/blade.png") no-repeat !important;
+  z-index: -2;
   width: 8rem;
   height: 8rem;
   border-radius: 50%;
@@ -50,6 +51,12 @@
   font-weight: 800;
   background: #f1f1ff;
 }
+@media screen and (max-width: 678px) {
+  .slideBox-1 {
+    display: none;
+  }
+}
+
 .m-2 {
   margin: 2rem;
 }
@@ -95,6 +102,7 @@
   justify-content: center;
   align-items: center;
   background: url("../assests/blade.png") no-repeat !important;
+  z-index: -2;
   width: 8rem;
   height: 8rem;
   border-radius: 50%;
@@ -102,6 +110,12 @@
   font-weight: 800;
   background: #f1f1ff;
 }
+@media screen and (max-width: 678px) {
+  .slideBox-2 {
+    display: none;
+  }
+}
+
 .m-3 {
   margin: 3rem;
 }
@@ -147,6 +161,7 @@
   justify-content: center;
   align-items: center;
   background: url("../assests/blade.png") no-repeat !important;
+  z-index: -2;
   width: 8rem;
   height: 8rem;
   border-radius: 50%;
@@ -154,6 +169,12 @@
   font-weight: 800;
   background: #f1f1ff;
 }
+@media screen and (max-width: 678px) {
+  .slideBox-3 {
+    display: none;
+  }
+}
+
 .m-4 {
   margin: 4rem;
 }
@@ -199,6 +220,7 @@
   justify-content: center;
   align-items: center;
   background: url("../assests/blade.png") no-repeat !important;
+  z-index: -2;
   width: 8rem;
   height: 8rem;
   border-radius: 50%;
@@ -206,6 +228,12 @@
   font-weight: 800;
   background: #f1f1ff;
 }
+@media screen and (max-width: 678px) {
+  .slideBox-4 {
+    display: none;
+  }
+}
+
 .m-5 {
   margin: 5rem;
 }
@@ -251,6 +279,7 @@
   justify-content: center;
   align-items: center;
   background: url("../assests/blade.png") no-repeat !important;
+  z-index: -2;
   width: 8rem;
   height: 8rem;
   border-radius: 50%;
@@ -258,6 +287,12 @@
   font-weight: 800;
   background: #f1f1ff;
 }
+@media screen and (max-width: 678px) {
+  .slideBox-5 {
+    display: none;
+  }
+}
+
 .m-6 {
   margin: 6rem;
 }
@@ -303,6 +338,7 @@
   justify-content: center;
   align-items: center;
   background: url("../assests/blade.png") no-repeat !important;
+  z-index: -2;
   width: 8rem;
   height: 8rem;
   border-radius: 50%;
@@ -310,6 +346,12 @@
   font-weight: 800;
   background: #f1f1ff;
 }
+@media screen and (max-width: 678px) {
+  .slideBox-6 {
+    display: none;
+  }
+}
+
 .m-7 {
   margin: 7rem;
 }
@@ -355,6 +397,7 @@
   justify-content: center;
   align-items: center;
   background: url("../assests/blade.png") no-repeat !important;
+  z-index: -2;
   width: 8rem;
   height: 8rem;
   border-radius: 50%;
@@ -362,6 +405,12 @@
   font-weight: 800;
   background: #f1f1ff;
 }
+@media screen and (max-width: 678px) {
+  .slideBox-7 {
+    display: none;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -374,7 +423,7 @@
   width: 15px;
 }
 * ::-webkit-scrollbar-thumb {
-  background-color: #d8d2d2;
+  background-color: #fcdd7f;
   border-bottom-left-radius: 7rem;
   border-bottom-right-radius: 7rem;
   border: 1px solid rgb(143, 133, 133);
@@ -554,12 +603,14 @@ footer .hanles > a {
   padding-right: 0.5em;
   border-radius: 50%;
   background: #dad1d1;
+  transform: scale(1.1);
 }
 footer .hanles > a:hover {
   transition: 1s;
   transform: scale("1.1");
-  background-color: transparent;
-  border: 2px solid #388997;
+  transform: scale(1.2);
+  background-color: #6cb8c4;
+  border: 1px solid #003B46;
 }
 
 .icon {

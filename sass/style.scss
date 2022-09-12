@@ -103,9 +103,9 @@ header {
     margin: 2rem;
     height: 13rem;
     font-size: 6px;
-    h1{
+    // h1{
 
-    }
+    // }
   }
 }
 
@@ -162,10 +162,12 @@ footer {
     padding-right: .5em;
     border-radius: 50%;
     background: #dad1d1;
+      transform: scale(1.1);
     &:hover {
       @include config.transformTransition('1.1') ;
-      background-color: transparent;
-      border: 2px solid config.$darkBlueColor;
+      transform: scale(1.2);
+      background-color: #6cb8c4;
+      border: 1px solid config.$secondary_color;
     }
   }
 }
